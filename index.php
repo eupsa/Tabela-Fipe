@@ -71,7 +71,7 @@
         }
 
         .table th {
-            background-color: #444;
+            background-color: #ccc;
             color: #ffffff;
             text-transform: uppercase;
             font-weight: bold;
@@ -104,12 +104,12 @@
         <div class="container">
             <h1 class="title" style="color: #fff;">Consulte a Tabela FIPE</h1>
             <div class="box">
-                <form action="consultar.php" method="GET">
+                <form>
                     <div class="field">
                         <label class="label">Tipo de Veículo</label>
                         <div class="control">
                             <div class="select is-fullwidth">
-                                <select name="tipo" id="tipo-veiculo">
+                                <select name="tipo" id="tipo">
                                     <option value="" disabled selected>Selecione o tipo do veículo...</option>
                                     <option value="carros">Carro</option>
                                     <option value="motos">Moto</option>
@@ -122,8 +122,7 @@
                         <label class="label">Marca</label>
                         <div class="control">
                             <div class="select is-fullwidth">
-                                <select name="tipo" id="tipo-veiculo">
-                                    <option value="" disabled selected>Selecione a marca...</option>
+                                <select name="marcas" id="marcas">
                                 </select>
                             </div>
                         </div>
@@ -131,42 +130,54 @@
                     <div class="field">
                         <label class="label">Modelo</label>
                         <div class="control">
-                            <input class="input" type="text" name="modelo">
+                            <div class="select is-fullwidth">
+                                <select name="modelo" id="modelo">
+                                </select>
+                            </div>
                         </div>
                     </div>
                     <div class="field">
                         <label class="label">Ano</label>
                         <div class="control">
-                            <input class="input" type="date" name="ano">
+                            <div class="select is-fullwidth">
+                                <select name="anos" id="anos">
+                                </select>
+                            </div>
                         </div>
-                    </div>
-                    <div class="control">
-                        <button class="button is-success is-fullwidth is-outlined is-dark">BUSCAR</button>
                     </div>
                 </form>
             </div>
             <div class="box">
                 <h2 class="subtitle" style="color: #fff;">Resultado da Consulta</h2>
                 <div class="table-container">
-                    <table class="table is-fullwidth is-striped is-hoverable">
+                    <table id="resultados" class="table is-fullwidth is-striped is-hoverable">
                         <thead>
                             <tr>
                                 <th>Marca</th>
                                 <th>Modelo</th>
                                 <th>Ano</th>
                                 <th>Valor</th>
+                                <th>Combustível</th>
+                                <th>Mês de Referência</th>
+                                <th>Código Fipe</th>
                             </tr>
                         </thead>
                         <tbody>
+                            <!-- Dados serão exibidos aqui -->
                         </tbody>
                     </table>
                 </div>
             </div>
-        </div>
+            <div style="text-align: center; color: #ccc; margin-top: 50px; font-size: 1.1rem;">
+                <a href="https://www.pedro-dev.me" target="_blank" style="color:rgb(105, 105, 105); font-weight: bold;">https://www.pedro-dev.me</a>
+                </p>
+                <p>Dados fornecidos pela <a href="https://deividfortuna.github.io/fipe/" target="_blank" style="color: #ffdd57;">API Fipe</a></p>
+            </div>
     </section>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="index.js"></script>
 </body>
+
 
 </html>
