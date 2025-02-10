@@ -18,3 +18,8 @@ Este projeto tem como objetivo proporcionar uma maneira rápida e fácil de cons
 - Seleção de tipo de veículo (Carro, Moto, Caminhão).
 - Consulta de marca, modelo, e ano do veículo.
 - Exibição de informações detalhadas, como valor de mercado e combustível.
+
+## Prévia 
+
+ ![image](https://github.com/user-attachments/assets/66759cb1-bd71-4b37-8c97-82ecb7e94047)
+
