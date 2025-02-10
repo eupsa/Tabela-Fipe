@@ -19,7 +19,14 @@ Este projeto tem como objetivo proporcionar uma maneira rápida e fácil de cons
 - Consulta de marca, modelo, e ano do veículo.
 - Exibição de informações detalhadas, como valor de mercado e combustível.
 
-## Prévia 
+## Prévia
 
- ![image](https://github.com/user-attachments/assets/66759cb1-bd71-4b37-8c97-82ecb7e94047)
+<div align="center">
 
+### Desktop  
+![image](https://github.com/user-attachments/assets/dbc81100-9a2b-4499-8b02-a54136b25ac9)
+
+### Mobile  
+![image](https://github.com/user-attachments/assets/6e530fe0-1563-40ce-9193-54fb20f2e365)
+
+</div>
