@@ -24,9 +24,12 @@ Este projeto tem como objetivo proporcionar uma maneira rápida e fácil de cons
 <div align="center">
 
 ### Desktop  
-![image](https://github.com/user-attachments/assets/dbc81100-9a2b-4499-8b02-a54136b25ac9)
+![image](https://github.com/user-attachments/assets/aa75a12a-fc7b-4401-bcb3-6b3e050630d3)
+
 
 ### Mobile  
-![image](https://github.com/user-attachments/assets/6e530fe0-1563-40ce-9193-54fb20f2e365)
+![image](https://github.com/user-attachments/assets/0c368c70-e912-47f2-8890-4d83d43056d8)
+![image](https://github.com/user-attachments/assets/ed949593-9a69-4683-a786-442d38d74fc1)
+
 
 </div>
