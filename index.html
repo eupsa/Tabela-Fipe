@@ -6,21 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabela FIPE</title>
     <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.min.css">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Meta Tags SEO -->
     <meta name="description"
         content="Tabela FIPE - Consulte preços e informações sobre veículos, motos e caminhões no Brasil. A plataforma oficial para pesquisa de valores de veículos usados.">
     <meta name="author" content="Tabela FIPE Inc">
     <meta name="keywords"
         content="Tabela FIPE, preços de veículos, valores de carros, veículos usados, consulta FIPE, preços de motos, preços de caminhões">
     <meta name="robots" content="index, follow">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="theme-color" content="#0056b3">
     <meta name="format-detection" content="telephone=no">
-    <!-- SEO - Versão alternativa do site para outros idiomas -->
     <link rel="alternate" href="" hreflang="pt-br">
-    <!-- SEO - URL canônica para evitar conteúdo duplicado -->
     <link rel="canonical" href="https://psilvagg.github.io/Tabela-Fipe/">
-    <!-- Open Graph (Facebook, LinkedIn e outras redes sociais) -->
     <meta property="og:type" content="website">
     <meta property="og:locale" content="pt_BR">
     <meta property="og:url" content="https://psilvagg.github.io/Tabela-Fipe/">
@@ -29,215 +27,123 @@
         content="Tabela FIPE - Consulte preços e informações sobre veículos, motos e caminhões no Brasil. A plataforma oficial para pesquisa de valores de veículos usados.">
     <meta property="og:image"
         content="http://storage.googleapis.com/kaggle-datasets-images/2393668/4040736/926bce829630cbfc704e18677d68d13f/dataset-cover.png?t=2022-08-07-16-13-44">
-    <!-- Twitter Cards -->
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Tabela FIPE">
     <meta name="twitter:description"
         content="Tabela FIPE - Consulte preços e informações sobre veículos, motos e caminhões no Brasil. A plataforma oficial para pesquisa de valores de veículos usados.">
     <meta name="twitter:image"
         content="http://storage.googleapis.com/kaggle-datasets-images/2393668/4040736/926bce829630cbfc704e18677d68d13f/dataset-cover.png?t=2022-08-07-16-13-44">
-    <!-- Informações de contato do negócio -->
     <meta property="business:contact_data:country_name" content="Brasil">
     <meta property="business:contact_data:region" content="SP">
     <meta property="business:contact_data:website" content="https://psilvagg.github.io/Tabela-Fipe/">
     <meta property="business:contact_data:email" content="pedruuu291@gmail.com">
-    <!-- Geolocalização -->
     <meta name="geo.placename" content="BA">
     <meta name="geo.region" content="BR">
-
-
-    <style>
-        html {
-            scrollbar-width: none;
-        }
-
-        body {
-            background-color: rgb(0, 0, 0);
-            color: #e0e0e0;
-            margin: 0;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-
-        }
-
-        .container {
-            max-width: 600px;
-            margin-top: 5%;
-        }
-
-        .box {
-            background: linear-gradient(135deg, #222 0%, #333 100%);
-            border: 1px solid #444;
-            border-radius: 12px;
-            padding: 20px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-        }
-
-        .input,
-        .select select {
-            background-color: #292929;
-            border: 1px solid #555;
-            color: #e0e0e0;
-            border-radius: 6px;
-            height: 45px;
-            font-size: 1rem;
-        }
-
-        .select select {
-            padding: 10px;
-        }
-
-        .button.is-primary {
-            background: linear-gradient(135deg, #7b1fa2 0%, #512da8 100%);
-            border: none;
-            color: #fff;
-            transition: 0.3s;
-            border-radius: 8px;
-            font-size: 1rem;
-            height: 45px;
-        }
-
-        .button.is-primary:hover {
-            background: linear-gradient(135deg, #512da8 0%, #311b92 100%);
-        }
-
-        .table-container {
-            overflow-x: auto;
-        }
-
-        .table {
-            background-color: #1e1e1e;
-            color: #e0e0e0;
-            border-radius: 8px;
-            width: 100%;
-            text-align: center;
-        }
-
-        .table th {
-            background-color: #ccc;
-            color: #ffffff;
-            text-transform: uppercase;
-            font-weight: bold;
-        }
-
-        .table tr:nth-child(even) {
-            background-color: #2a2a2a;
-        }
-
-        h1,
-        .label {
-            color: #fff;
-        }
-
-        h1 {
-            font-size: 2rem;
-            font-weight: bold;
-            text-align: center;
-            margin-bottom: 1.5rem;
-        }
-
-        .field {
-            margin-bottom: 1rem;
-        }
-    </style>
 </head>
 
-<body>
+<body class="bg-gray-900 text-gray-200">
+    <header class="bg-gray-800 py-4 shadow">
+        <div class="container mx-auto px-4">
+            <h1 class="text-3xl font-bold text-center text-white">Tabela FIPE</h1>
+        </div>
+    </header>
 
+    <main class="container mx-auto px-4 py-8">
+        <!-- Seção de Orientações -->
+        <section class="bg-gradient-to-br from-blue-800 to-blue-700 p-6 rounded-lg shadow-lg mb-8">
+            <h2 class="text-2xl font-semibold mb-4 text-center">Como Consultar</h2>
+            <p class="mb-4 text-justify">
+                Para consultar a Tabela FIPE, siga os passos abaixo:
+            </p>
+            <ul class="list-disc list-inside mb-4">
+                <li>Escolha o <strong>Tipo de Veículo</strong> (Carro, Moto ou Caminhão).</li>
+                <li>Selecione a <strong>Marca</strong> desejada.</li>
+                <li>Escolha o <strong>Modelo</strong> do veículo.</li>
+                <li>Por fim, selecione o <strong>Ano</strong> de fabricação.</li>
+            </ul>
+            <p class="text-justify">
+                Após preencher todas as opções, os resultados com informações e valores atualizados serão exibidos na
+                área de <strong>Resultado da Consulta</strong>.
+            </p>
+        </section>
 
-    <section class="section">
-        <div class="container">
-            <h1 class="title" style="color: #fff;">Consulte a Tabela FIPE</h1>
-            <div class="box">
-                <form>
-                    <div class="field">
-                        <label class="label">Tipo de Veículo</label>
-                        <div class="control">
-                            <div class="select is-fullwidth">
-                                <select name="tipo" id="tipo">
-                                    <option value="" disabled selected>Selecione o tipo do veículo...</option>
-                                    <option value="carros">Carro</option>
-                                    <option value="motos">Moto</option>
-                                    <option value="caminhoes">Caminhão</option>
-                                </select>
-                            </div>
-                        </div>
+        <!-- Seção de Consulta -->
+        <section class="bg-gradient-to-br from-gray-800 to-gray-700 p-6 rounded-lg shadow-lg mb-8">
+            <h2 class="text-2xl font-semibold mb-4 text-center">Consulte a Tabela FIPE</h2>
+            <form>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                        <label for="tipo" class="block mb-2 text-white">Tipo de Veículo</label>
+                        <select name="tipo" id="tipo"
+                            class="w-full p-3 bg-gray-600 rounded text-white focus:outline-none focus:ring-2 focus:ring-purple-600">
+                            <option value="" disabled selected>Selecione o tipo do veículo...</option>
+                            <option value="carros">Carro</option>
+                            <option value="motos">Moto</option>
+                            <option value="caminhoes">Caminhão</option>
+                        </select>
                     </div>
-                    <div class="field">
-                        <label class="label">Marca</label>
-                        <div class="control">
-                            <div class="select is-fullwidth">
-                                <select name="marcas" id="marcas">
-                                </select>
-                            </div>
-                        </div>
+                    <div>
+                        <label for="marcas" class="block mb-2 text-white">Marca</label>
+                        <select name="marcas" id="marcas"
+                            class="w-full p-3 bg-gray-600 rounded text-white focus:outline-none focus:ring-2 focus:ring-purple-600">
+                            <!-- Opções de marcas serão carregadas dinamicamente -->
+                        </select>
                     </div>
-                    <div class="field">
-                        <label class="label">Modelo</label>
-                        <div class="control">
-                            <div class="select is-fullwidth">
-                                <select name="modelo" id="modelo">
-                                </select>
-                            </div>
-                        </div>
+                    <div>
+                        <label for="modelo" class="block mb-2 text-white">Modelo</label>
+                        <select name="modelo" id="modelo"
+                            class="w-full p-3 bg-gray-600 rounded text-white focus:outline-none focus:ring-2 focus:ring-purple-600">
+                            <!-- Opções de modelos serão carregadas dinamicamente -->
+                        </select>
                     </div>
-                    <div class="field">
-                        <label class="label">Ano</label>
-                        <div class="control">
-                            <div class="select is-fullwidth">
-                                <select name="anos" id="anos">
-                                </select>
-                            </div>
-                        </div>
+                    <div>
+                        <label for="anos" class="block mb-2 text-white">Ano</label>
+                        <select name="anos" id="anos"
+                            class="w-full p-3 bg-gray-600 rounded text-white focus:outline-none focus:ring-2 focus:ring-purple-600">
+                            <!-- Opções de anos serão carregadas dinamicamente -->
+                        </select>
                     </div>
-                </form>
-            </div>
-            <div class="box">
-                <h2 class="subtitle" style="color: #fff;">Resultado da Consulta</h2>
-                <div class="table-container">
-                    <table id="resultados" class="table is-fullwidth is-striped">
-                        <thead>
-                            <tr>
-                                <th>Marca</th>
-                                <th>Modelo</th>
-                                <th>Ano</th>
-                                <th>Valor</th>
-                                <th>Combustível</th>
-                                <th>Mês de Referência</th>
-                                <th>Código Fipe</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <!-- Dados serão exibidos aqui -->
-                        </tbody>
-                    </table>
                 </div>
+            </form>
+        </section>
+
+        <!-- Seção de Resultados -->
+        <section class="bg-gradient-to-br from-gray-800 to-gray-700 p-6 rounded-lg shadow-lg">
+            <h2 class="text-2xl font-semibold mb-4 text-center">Resultado da Consulta</h2>
+            <div id="resultados" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Os resultados serão exibidos aqui -->
             </div>
-            <div style="text-align: center; color: #ccc; margin-top: 50px; font-size: 1.1rem;">
-                <a href="https://www.pedro-dev.me" target="_blank"
-                    style="color:rgb(105, 105, 105); font-weight: bold;">https://www.pedro-dev.me</a>
-                </p>
-                <p>Dados fornecidos pela <a href="https://deividfortuna.github.io/fipe/" target="_blank"
-                        style="color: #ffdd57;">API Fipe</a></p>
-            </div>
-            <div style="text-align: center; margin-top: 30px;">
+        </section>
+
+        <!-- Rodapé -->
+        <footer class="mt-10 text-center text-gray-400 text-sm">
+            <p>
+                <a href="https://www.pedro-dev.me" target="_blank" class="font-bold hover:text-gray-300">
+                    https://www.pedro-dev.me
+                </a>
+            </p>
+            <p>
+                Dados fornecidos pela
+                <a href="https://deividfortuna.github.io/fipe/" target="_blank" class="text-yellow-500 hover:underline">
+                    API Fipe
+                </a>
+            </p>
+            <p class="mt-4">
                 <a href="https://github.com/psilvagg/Tabela-Fipe" target="_blank"
-                    style="display: inline-flex; align-items: center; background-color: #24292f; color: #fff; padding: 5px 10px; border-radius: 5px; text-decoration: none; font-size: 1.1rem; transition: all 0.3s ease;">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
-                        class="bi bi-github" viewBox="0 0 16 16" style="margin-right: 10px;">
+                    class="inline-flex items-center bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-700 transition">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="mr-2"
+                        viewBox="0 0 16 16">
                         <path
                             d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
                     </svg>
                     Visite o Repositório
                 </a>
-            </div>
-
-    </section>
+            </p>
+        </footer>
+    </main>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="index.js"></script>
 </body>
-
 
 </html>
